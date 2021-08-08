@@ -84,7 +84,7 @@ body{
     display: none;
 }
 
-@media screen and (min-width: 1792px) {
+@media screen and (min-width: 1800px)  and (min-height: 1000px){
 #quote {
     display: none;
 }
