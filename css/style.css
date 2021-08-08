@@ -75,6 +75,30 @@ body{
 #greeting {
     font-size: 36px;
 }
+
 #weather {
     font-size: 16px;
+}
+
+#too-big{
+    display: none;
+}
+
+@media screen and (min-width: 1792px) {
+#quote {
+    display: none;
+}
+
+#too-big{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: teal;
+    color: whitesmoke;
+    font-size: 36px;
+    z-index: 1000;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 }
