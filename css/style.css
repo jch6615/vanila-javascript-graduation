@@ -1,0 +1,80 @@
+@import "todo.css";
+@import "quote.css";
+@import "time.css";
+
+*{
+    font-family: "subjectivity", serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+  }
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: -1000;
+    overflow: auto;
+    background-attachment: scroll;
+}
+
+#welcome {
+    position: absolute;
+    top: 30%;
+    color: whitesmoke;
+    font-size: 72px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+}
+
+#login-form input{
+    font-size: 36px;
+    padding: 10px;
+    border:none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#login-form button{
+    font-size: 36px;
+    padding: 10px;
+    border:none;
+    border-radius: 10px;
+}
+
+.weather {
+    position: absolute;
+    top: 12%;
+    right: 15%;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#greeting {
+    font-size: 36px;
+}
+#weather {
+    font-size: 16px;
+}

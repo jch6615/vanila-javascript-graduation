@@ -1,0 +1,72 @@
+#date-clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 7%;
+    top: 20%;
+    color: whitesmoke;
+}
+
+#date-clock span {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#date-clock h2 {
+    font-size: 48px;
+}
+
+.dday-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dday-text, .dday-date {
+    width: 220px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.dday-container button {
+    width: 240px;
+    font-size: 24px;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 5px;
+}
+
+.dday-viewer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    max-width: 200px
+}
+
+.dday-viewer span:first-child{
+    background-color: rgba(0,0,0,0.6);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.dday-viewer span:last-child{
+    background-color: whitesmoke;
+    padding: 40px 20px;
+    font-size: 36px;
+    color: tomato;
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <!-- background -->
+    <div class="background">
+        <video autoplay loop muted>
+            <source src="background/Rain.mp4" type="video/mp4">
+            Sorry, your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!-- login form -->
+    <h1 id="welcome" class="hidden">WELCOME</h1>
+    <form id="login-form" class="hidden">
+        <input
+          type="text"
+          placeholder="What is your name?"
+          required
+          maxlength="15"
+          class="hidden"
+        />
+        <button class="hidden">Log In</button>
+    </form>
+
+    <!-- greeting .. need to change position-->
+    <div class="weather">
+        <h1 id="greeting" class="hidden"></h1>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+    </div> 
+    <!-- todolist -->
+    <main class="todo-container">
+        <form id="todo-form">
+            <input type="text" placeholder="오늘 할일은 무엇인가요?" required>
+        </form>
+
+        <div class="todo-list">
+            <header class="todo-titleBox">
+                <span>MISSION</span>
+                <span>DELETE</span>
+            </header>
+        </div>
+    </main>
+
+    <div id="quote">
+        <div></div>
+        <div></div>
+    </div>
+
+    <div id="date-clock">
+        <span class="today"></span>
+        <h2 id="clock">00:00:00</h2>
+        <form class="dday-container">
+            <input class="dday-text" type="text" placeholder="Anniversary">
+            <input class="dday-date" type="date">
+            <button>save</button>
+        </form>
+            <div class="dday-viewer hidden">
+                <span></span>
+                <span></span>
+            </div>
+    </div>
+
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/dday.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
